@@ -5,6 +5,10 @@ console.log(name);
 
 var age = "20";
 console.log(parseInt(age));
+//or
+console.log(Number(age)); // 20 because Number converts the string to a number. it may convert the string to a number if it is a number 
+console.log(Boolean(age)); // true because age is a non-empty string
+
 
 var sName = "Tilak Ray";
 console.log(parseInt(sName)); // NaN because sName is not a number
