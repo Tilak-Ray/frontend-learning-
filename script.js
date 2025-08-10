@@ -9,6 +9,13 @@ console.log(parseInt(age));
 console.log(Number(age)); // 20 because Number converts the string to a number. it may convert the string to a number if it is a number 
 console.log(Boolean(age)); // true because age is a non-empty string
 
+// to use power
+console.log(2 ** 3); // 8 because 2 to the power of 3 is 8
+
+// use of symbol
+const sym1 = Symbol("123");
+const sym2 = Symbol("123");
+console.log(sym1 === sym2); // false because sym1 and sym2 are two different symbols    
 
 var sName = "Tilak Ray";
 console.log(parseInt(sName)); // NaN because sName is not a number
@@ -51,6 +58,9 @@ var name = "Tilak Ray";
 var age = 20;
 console.log("My name is " + name + " and my age is " + age);
 
+// concatenation in modern way
+console.log(`My name is ${name} and my age is ${age}`) // using template literals (backticks) for string interpolation
+
 // type coercion ( it converts the type of the variable to the other type but shows different results based on the operation )
 var num1 = 5;
 var num2 = "10";
@@ -86,4 +96,26 @@ do {
     
 } while (isNaN(num) || num < 0); // keeps asking for a number until a valid number is entered
 
+
+
+
+// stack and heap memory
+// stack memory is used for primitive data types (number, string, boolean, null, undefined, symbol) and function calls
+// heap memory is used for non-primitive data types (objects, arrays, functions)    
+
+// Example of stack and heap memory
+var num = 5; // stack memory    
+var num2 = num; // stack memory, num2 is a copy of num
+console.log(num2); // 5 
+num2 = 10; // stack memory, num2 is now 10, num is still 5
+console.log(num); // 5  
+
+
+var obj = { name: "Tilak" }; // heap memory
+var obj2 = obj; // stack memory, obj2 is a reference to obj
+console.log(obj2.name); // Tilak
+obj2.name = "Ray"; // heap memory, obj2.name is now Ray, obj.name is also Ray
+console.log(obj.name); // Ray
+console.log(obj2); // { name: 'Ray' }  
+console.log(obj); // { name: 'Ray' }
 
