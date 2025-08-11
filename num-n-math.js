@@ -37,4 +37,4 @@ console.log(Math.min(1, 2, 3)); // returns the minimum value from the list of nu
 console.log(Math.random()); // returns a random number between 0 and 1  
 console.log(Math.random() * 10); // returns a random number between 0 and 10
 console.log(Math.random() * 10 + 1); // returns a random number between 1 and 10    
-console.log(Math.random() * 10 + 1 | 0); // returns a random integer between 1 and 10
+console.log(Math.random() * 10 + 1 | 0); // returns a random integer between 1 and 10. it uses bitwise OR to truncate the decimal part
