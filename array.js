@@ -26,4 +26,33 @@ let myArr = [1, 2, 3, 4, 5, 6, 7];
 
 // console.log(myArr);
 
+let arry1 = [1,2,3,4]
+let arry2 = [5,6,7,8] 
+
+// let newArry = arry1.concat(arry2);        // it add these two array and return one single combined array
+// console.log(newArry);
+
+// let newArry1 = [...arry1,...arry2];  // it also allow the same but , in this u can more than 2 array unlike concat
+
+// console.log(newArry1);
+
+
+// let newArry3 = [1,2,3,[3,4,5, [5,4,3,2]],9];
+
+// console.log(newArry3.flat(Infinity))   // so it make a single individual 1D array without inside array 
+
+// console.log(Array.isArray(arry1))    // it checks wether the input is array or not 
+
+
+// console.log(Array.from("tilak"))     // it make the input an array
+
+// let num1= 4
+// let num2= 3
+// let num3= 2
+
+// console.log(Array.of(num1, num2, num3))      // it form an array from an given values
+
+
+
+
 
