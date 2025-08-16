@@ -51,10 +51,26 @@ function users(anyUser){
 console.log(users({ name: "tilak", age: 18 })); // name is tilak and the age is 18 and same thing with array
 
 
+const jood = (num1 , num2) => {              // this is known as explecite define function which must have return
+    return num1 + num2;
+}
 
 
+const jood2 = (num1 , num2) => (num1 + num2)           // this is known as implecte define function
 
 
+const objReturn = () => ({username : 'tilak'});         // it returns objects from calling 
+
+console.log(objReturn());
+
+const objReturn1 = () => {return {username : 'tilak'}};         // it returns objects from calling 
 
 
-             
+console.log(objReturn1());
+
+
+// this IIFE
+  
+// ( () => (console.log("tialk")))()        // here 1st () is for fun.. difenation and 2nd one () is to call 
+
+ ((name)=> (console.log(name)))("Tilak");         // can be used as normal function as we call the normal function
