@@ -111,7 +111,7 @@ console.log(new Date(2023, 10, 10).toString())
 
 
 
-
+let userName = name ?? "Guest";// ?? this is nullish operator it returns left value if right is null or undefined 
 
 
 
